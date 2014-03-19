@@ -1,0 +1,23 @@
+{
+  "name": "geo-logger",
+  "version": "1.0.0",
+  "description": "Geolocation Logger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dubway/geolog/tree/master/server.git"
+  },
+  "author": "Pedro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dubway/geolog/issues"
+  },
+  "homepage": "https://github.com/dubway/geolog/tree/master/server",
+  "dependencies": {
+    "logfmt": "~1.0.0-pre3",
+    "express": "~3.4.8"
+  }
+}

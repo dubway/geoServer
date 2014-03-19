@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <script type="text/javascript" src="js/zepto.min.js"></script>
+
+	<script type="text/javascript">
+		var times,
+			lat,
+			lon;
+
+		function getTimeStamp(){
+			myDate = new Date();
+			timeStamp = myDate.getTime();
+		}	
+		
+		function getLocation(){
+
+			if (navigator.geolocation){
+  				navigator.geolocation.getCurrentPosition(displayPosition);
+  
+			} else{
+  				geo.innerHTML = "Geolocation is not supported by your browser!";
+  			}
+		}
+		function displayPosition(position){
+			lat = position.coords.latitude;
+			lon = position.coords.longitude;
+			getTimeStamp();
+			submitName();
+		}
+
+		//this function makes an HTTP GET request for /name/username		
+		function submitName() {
+			$.get("/logdata/name/" + "test" + "/times/" + timeStamp + "/lat/" + lat + "/long/" + lon, function(data) {
+					console.log(data);
+
+			});		
+		}
+	</script>
+	
+	</head>
+	<body onload="getLocation();">
+	<div id="time"></div>
+	What's my location?: 
+	</body>
+</html>
