@@ -1,5 +1,5 @@
 {
-  "name": "geo-logger",
+  "name": "geoServer",
   "version": "1.0.0",
   "description": "Geolocation Logger",
   "main": "index.js",
@@ -8,16 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dubway/geolog/tree/master/server.git"
+    "url": "https://github.com/dubway/geoServer.git"
   },
   "author": "Pedro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dubway/geolog/issues"
+    "url": "https://github.com/dubway/geoServer/issues"
   },
-  "homepage": "https://github.com/dubway/geolog/tree/master/server",
+  "homepage": "https://github.com/dubway/geoServer",
   "dependencies": {
     "logfmt": "~1.0.0-pre3",
     "express": "~3.4.8"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "Geolocation",
+    "Logger"
+  ]
 }
